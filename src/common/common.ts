@@ -8,4 +8,5 @@ export interface DefaultAttributeProps {
 export const defaultAttributes = css<DefaultAttributeProps>`
   margin-top: ${({$mt}) => ($mt ? $mt * 8 : 0)}px;
   background-color: ${({$backgroundColor}) => ($backgroundColor ? $backgroundColor : '')};
+  color: ${(props) => (props.theme.primary)};
 `
